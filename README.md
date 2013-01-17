@@ -9,7 +9,7 @@ Among its feature are:
 - A retractable menu
 - Hotkeys
 
-<h1><u>Configuration</u></h1>
+#Configuration
 To get started configuring, open the config.js file in the js directory.
 
 ##Options
@@ -20,6 +20,8 @@ Change the values of these to change various defaults and layouts of your homepa
 The next section is for search engines. In each block of options for each search engine, you'll find one called "enabled." Set this to true or false depending on whether or not you want it to be included in the search engine selector.  
 Note that bittorrent sites are disabled by default.  
 
+If you have a request for a specific engine to be added, feel free to open an issue on Github
+
 ##Menu Links
 This section defines the links in the retractable menu. The menu supports an arbitrary number of entries, with the default being 6 (probably). Each entry has a name and url associated with it. The name is what the link will appear as in the menu, and the url is the link's destination. It is recommended that you keep the names short so as not to overflow the menu.  
 
@@ -27,7 +29,7 @@ This section defines the links in the retractable menu. The menu supports an arb
 Here is the portion where the links in the center of the page are defined. Like the retractable menu, each has a name and url to configure.  
 You may add more links by duplicating the blocks in the default config, exactly like how entries are added to the retractable menu. Once you have more links than the page can hold (10 by default), another page will be automatically created.  
 
-<h1><u>Usage</u></h1>
+#Usage
 
 ##Retractable menu
 The retractable menu is opened by hovering over it, and will close when no longer being hovered over. Clicking on the menu (but not on a link) will keep the menu open even if it not being hovered on.  
