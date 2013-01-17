@@ -1,0 +1,10 @@
+1.0
+ - Now supports an arbitrary number of columns and rows per page of links
+ - Scrolling from a page with less than 10 links on it no longer fails
+ - Pirate Bay search works properly
+ - Retractable menu is now optional
+ - Search engines now have an "enabled" option instead of being commented out
+ - Default search option now starts at 1
+ - Added changelog
+ - Added README
+ * Old configs NOT compatible

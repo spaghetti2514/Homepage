@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdEYAEn9MAB+MVAAtlFkAOJhbAD+YWwBFmFsATZhbAEuYWwBCmFsAQ5JYAD2JUgAsf0wAH3RFAA8AAAAAr2kAL7xxAMm/dwvqvnUI5b52CuG+dwvhvncK4r52CeS+dgnovnYK6751COa+dwvqvnYK7b51COi8cQG4mFsAGgAAAADUpFyn+PHl5fLl0d/x4crY8ODI2fTo1d/27d/d9+7h3PPn1eHx4crd8eLL3/Hiy+T48OXqzZVCeQAAAAAAAAAA27N3utWmYNq8cQDmvHEA8LxxAPbduH/V////8f////bWqGPVvHEA5rxxAO+8cQD337yH5tOjW5UAAAAAAAAAANy2fKvVp2HivHEA9bxxAP68cQDu3biAx/////b////z1adiybxxAOu8cQD9vHEA7N24gNnWqWSRAAAAAAAAAADctn2k1qhj1LxxAPO8cQD+vHEA7966g8f////w////79WnYtW8cQDxvHEA/rxxAObeuYHf1qlkiAAAAAAAAAAA3bd+nNaoZM28cQDPvHEA9LxxAPLeuYLe/////P///+vVpmHDvHEA8rxxAP68cQDq3rqE2daoZHsAAAAAhVAAE82WQrfRnVDNvHEA1LxxAOW8cQDz1aZf5fDgx+Pw4cng0JxN1LxxAPO8cQD+vHEA9diubeHIjDG8f0wAC69pAE/lyZ/Vy5A53rxxAOW8cQDsvHEA+rxxAP68cQDsvHEA6bxxAOu8cQD9vHEA/bxxAOTOmEfV3rqE9JhbADAAAAAAw4EdjvLkzuzLkjzUvHEA8LxxAP28cQD/vHEA+7xxAO+8cQDuvHEA9LxxAOLOmUjT7tu+5cF7E3YAAAAAAAAAAHBDAALEgiCK8eLL7cuROd+8cQDxvHEA9rxxAPa8cQDpvHEA1bxxAMTPmkrM7Ne45b94DW0AAAAAAAAAAAAAAAAAAAAAbUIAAcJ+GJTu3cLsyY4067xxAPq8cQDovHEA47xxANDPmkvJ7Ni56794DWsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxRAACwn4Xm+/exfHIjDDxvHEA87xxANDPmkrX7Ne46r94DnIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHVGAALCfxqY8N/H7cmMMfXQnE7S7Ni65794DnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd0cAAsOAG6Hw4Mjw7tzA3sB6EX4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+TAAEv3cMgr1zBGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAACAAQAAgAEAAIABAACAAQAAgAEAAAAAAAAAAAAAgAEAAIADAADABwAA4A8AAPAfAAD4PwAA/H8AAA==" type="image/x-icon">
+	<script src="js/config.js"></script>
+	<script src="js/main.js"></script>
+	</head>
+<body onkeydown="keymenu(event)">
+    <div id="parent">
+        <div id="swapCont"></div>
+		<div id="slide" onmouseover="lower()" onmouseout="raise()" onclick="k()" >
+			</br>
+			<nav id="menunav"></nav>
+		</div>
+        <div id="panel">
+            <div id="wrapper">
+            	<div id="sitescontainer">
+                	<div id="sitesjar"></div>
+                </div>
+                <center>
+                    <div id="search">
+                        <form id="searchform" name="searchform" method="" action="">
+                    		<div id="selectbg"></div>
+                    		<select id="select" onchange="s()"></select>
+                    		<input id="searchbox" type="text" autocomplete="off" name="q" placeholder="Search" onfocus="this.placeholder = ''; lockKeys()" onblur="this.placeholder = 'Search'; unlockKeys()" />
+                            <button type="submit" onmousedown='this.setAttribute("style","font-size: 24px; line-height: .75; padding-left: 28px!important;");' onmouseout='this.setAttribute("style","font-size: 18px; line-height: 1.1; padding-left: 12px;");' onclick='this.setAttribute("style","font-size: 18px; line-height: 1.1");'>➟</button>
+                        </form>
+                    </div>
+                </center>
+            </div>
+        	<div id="prevbutton" onclick="prevPage()"></div>
+    		<div id="nextbutton" onclick="nextPage()"></div>
+        </div>
+    </div>
+</body>
+</html>
