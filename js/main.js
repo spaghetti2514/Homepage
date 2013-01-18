@@ -154,10 +154,17 @@ function keymenu(e) {
 function s() {
 	var form	 = d.querySelector("#search form"),
     	selector = form.select.options[select.selectedIndex].index,
-        text = form.querySelector("input");
-    form.method		 = searches[selector].method;
-    form.action      = searches[selector].url;
-    text.name        = searches[selector].query;
+        text = form.querySelector("input"),
+        afterSkip = selector;
+        for (i = 0; i <= selector; ++i) {
+        	if (!searches[i].enabled) {
+        		afterSkip++;
+        		selector++;
+        	}
+        }
+    form.method		 = searches[afterSkip].method;
+    form.action      = searches[afterSkip].url;
+    text.name        = searches[afterSkip].query;
     d.getElementById('searchbox').focus();
 };
 

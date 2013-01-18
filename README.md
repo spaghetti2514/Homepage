@@ -1,4 +1,4 @@
-This is a homepage for your browser based on [Ahoka's][ah] original design, with some added functionality.  
+This is a homepage for Webkit and Gecko browsers based on [Ahoka's][ah] original design, with some added functionality.  
 [ah]: https://github.com/ahodesuka
 
 Among its feature are:

@@ -1,6 +1,12 @@
+1.0_2
+ - Fixed bug with disabled search engines causing the wrong search engines to be used
+ * Last version configs compatible
+
 1.0_1
  - Animations tweaked
  - Changing number of columns/rows should actually work
+ * Last version configs compatible
+
 1.0
  - Now supports an arbitrary number of columns and rows per page of links
  - Scrolling from a page with less than 10 links on it no longer fails
@@ -10,4 +16,4 @@
  - Default search option now starts at 1
  - Added changelog
  - Added README
- * Old configs NOT compatible
+ * Last version configs NOT compatible
