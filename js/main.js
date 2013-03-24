@@ -59,6 +59,10 @@ d.addEventListener("DOMContentLoaded", function() {
         var page = d.createElement("div");
         page.id = "page";
         page.style.width = 100 / pageAmount + "%";
+        //offset rows on last page when rows % maxrows ≠ 0
+        if (rowAmount % pageAmount != 0 && i == pageAmount - 1) {
+        	page.style.paddingTop = (rowAmount % pageAmount) * 61 + "px"
+        }
         for (ii = 0; ii < rowsPerPage & rowsMade < rowAmount; ++ii, ++rowsMade) {
             var row = d.createElement("div");
             row.id = "row";
