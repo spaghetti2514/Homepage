@@ -1,6 +1,10 @@
 This is a homepage for Webkit and Gecko browsers based on [Ahoka's][ah] original design, with some added functionality.  
 [ah]: https://github.com/ahodesuka
 
+Check out the [demo][demo]
+[demo]: https://spaghetti2514.github.io/Homepage
+
+
 Among its feature are:
 
 - Paged links
