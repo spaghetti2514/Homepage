@@ -1,7 +1,7 @@
 //Declare some self-explanitory variables
 var d            = document,
     menuLocked   = false,
-    menuHeight   = (menulinks.length + 1) * 45,
+    menuHeight   = (menulinks.length * 50) + 20,
     siteAmount   = links.length,
     sitesPerRow  = grid_columns,
     rowsPerPage  = grid_rows,
