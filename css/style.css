@@ -7,15 +7,72 @@ background: rgba(255, 255, 255, 0);
     font-weight: 400;
 src: local("Squada One"), local("SquadaOne-Regular"), url("../fonts/SquadaOne.woff") format("woff");
 }
-@-webkit-keyframes animate-sites {
-    0% { -webkit-transform: scale(0,0); opacity: 0; margin: 5px 25px 5px 25px; }
-    25% { opacity: 1; }
-    100% { -webkit-transform: scale(1,1); margin: 5px 5px 5px 5px; }
+@-webkit-keyframes animate-sitesT {
+    0% { -webkit-transform: translateY(-400%); }
+    100% { -webkit-transform: translateY(0); }
 }
-@-moz-keyframes animate-sites {
-    0% { transform: scale(0,0); opacity: 0; margin: 5px 25px 5px 25px; }
-    25% { opacity: 1; }
-    100% { transform: scale(1,1); margin: 5px 5px 5px 5px; }
+@-moz-keyframes animate-sitesT {
+    0% { -moz-transform: translateY(-400%); }
+    100% { -moz-transform: translateY(0); }
+}
+#link1 {
+    background: #4583EE;
+	-webkit-animation: animate-sitesT .7s linear;
+	-moz-animation: animate-sitesT .7s linear;
+}
+#link2 {
+    background: #CC181E;
+	-webkit-animation: animate-sitesT .6s linear;
+	-moz-animation: animate-sitesT .6s linear;
+}
+#link3 {
+    background: #A8C3E1;
+	-webkit-animation: animate-sitesT .5s linear;
+	-moz-animation: animate-sitesT .5s linear;
+}
+#link4 {
+    background: #777777;
+	-webkit-animation: animate-sitesT .4s linear;
+	-moz-animation: animate-sitesT .4s linear;
+}
+#link5 {
+    background: #005252;
+	-webkit-animation: animate-sitesT .3s linear;
+	-moz-animation: animate-sitesT .3s linear;
+}
+#link6 {
+    background: #46AAB0;
+	-webkit-animation: animate-sitesT .7s linear;
+	-moz-animation: animate-sitesT .7s linear;
+}
+#link7 {
+    background: #D7D5F0;
+	-webkit-animation: animate-sitesT .6s linear;
+	-moz-animation: animate-sitesT .6s linear;
+}
+#link8 {
+    background: #FFA628;
+	-webkit-animation: animate-sitesT .5s linear;
+	-moz-animation: animate-sitesT .5s linear;
+}
+#link9 {
+    background: #43609C;
+	-webkit-animation: animate-sitesT .4s linear;
+	-moz-animation: animate-sitesT .4s linear;
+}
+#link10 {
+    background: #AA0022;
+	-webkit-animation: animate-sitesT .3s linear;
+	-moz-animation: animate-sitesT .3s linear;
+}
+#link11 {
+    background: #729ECD;
+}
+#link12 {
+    background: #647D8B;
+}
+#link13 {
+    background: #647D8B;
 }
 @-webkit-keyframes animate-opacity {
     0% { opacity: 0; }
@@ -37,21 +94,13 @@ src: local("Squada One"), local("SquadaOne-Regular"), url("../fonts/SquadaOne.wo
     51% { opacity: 1; }
     100% { width: 14px; height: 14px; opacity: 1; margin: 0px 14px; }
 }
-@-webkit-keyframes animate-panel {
-    0% { box-shadow: #060606 0 0 4px; margin-top: 0; padding: 80px 0px; }
-    100% { box-shadow: #060606 0 0 10px; margin-top: 80px; padding: 0px 0px; }
-}
-@-moz-keyframes animate-panel {
-    0% { box-shadow: #060606 0 0 4px; margin-top: 0; padding: 80px 0px; }
-    100% { box-shadow: #060606 0 0 10px; margin-top: 80px; padding: 0px 0px; }
-}
 *:focus {
     outline: none!important;
     -moz-outline: none!important;
     -moz-user-focus: none!important;
 }
 body, html {
-	background-color: #1B1B1B;
+	background-color: #FAFAFA;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -68,19 +117,12 @@ button, input {
     position: relative;
     text-align: center;
     z-index: 10;
+    overflow: hidden;
 }
 #panel {
-    background: rgba(34,34,34,.6);
-    border: 1px solid rgba(30,30,30,.6);
-    border-top: 1px solid rgba(44,44,44,.6);
-    border-bottom: 1px solid rgba(24,24,24,.6);
     margin: auto;
     margin-top: 80px;
-    box-shadow: #060606 0 0 10px;
-    -webkit-animation: animate-panel 1s cubic-bezier(0.3, 0, 0.5, 1);
-    -moz-animation: animate-panel 1s cubic-bezier(0.3, 0, 0.5, 1);
     z-index: -4;
-    overflow: hidden;
     position: absolute;
     width: 100%;
 }
@@ -93,10 +135,10 @@ button, input {
     margin: 0 auto;
 }
 #sitescontainer {
-    height: auto;
-    padding: 25px 10px 5px;
-    text-align: center;
-    overflow: hidden;
+  height: auto;
+  padding: 25px 10px 0px;
+  text-align: center;
+	display: inline-block;
 }
 #sitesjar {
 	
@@ -106,42 +148,30 @@ button, input {
     float: left;
 }
 .link {
-    background: rgba(22,22,22,.7);
-    border: 1px solid rgba(30,30,30,.6);
-    border-bottom: 1px solid rgba(48,48,48,.8);
-    color: rgba(79, 140, 168, 1);
+    color: white;
     display: inline-block;
     font-family: 'Squada One';
-    font-size: 340%;
-    height: 125px;
+    font-size: 300%;
+    height: 127px;
     line-height: 125px;
     margin: 5px 7px;
     position: relative;
     text-align: center;
     text-decoration: none;
-    text-shadow: #0f0f0f  0px 0px 5px;
-    width: 125px;
+    width: 127px;
     z-index: 1;
-    border-radius: 5px;
-    box-shadow: inset #0f0f0f 0 -1px 6px;
     -webkit-transition: all .4s cubic-bezier(0.75, -0.5, 0.25, 1.5) .1s;
-    -moz-transition: all .4s cubic-bezier(.75,-0.5,.25,1.5) .1s;
-    -webkit-animation: animate-sites .5s cubic-bezier(0.3, .5, .5, 0.6);
-    -moz-animation: animate-sites .5s cubic-bezier(0.3, .5, .5, 0.6);
+    -moz-transition: all .4s cubic-bezier(0.75, -0.5, 0.25, 1.5) .1s;
 }
 .link:hover, .link:active, .link:focus {
-    background: none;
-    border: 1px solid transparent;
-    color: rgba(69, 130, 158, 0.99);
+    background: none !important;
+    color: black;
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     box-shadow: none;
-    text-shadow: #060606 0px 0px 5px, #5151b4 0px 1px, #335588 0px 2px;
     z-index: 2;
     width: 125px;
-    height: 100px;
-    line-height: 100px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -157,23 +187,20 @@ button, input {
     -moz-animation: animate-opacity .4s ease-in;
 }
 #search input[type="text"] {
-    background: rgba(22,22,22,.7);
-    border: 1px solid rgba(30,30,30,.6);
-    border-bottom: 1px solid rgba(48,48,48,.8);
+    background: #A8C3E1;
+    border: 1px solid #A8C3E1;
     width: 100%;
     height: 33px;
     padding: 3px 86px 3px 6px;
-    border-radius: 5px;
-    box-shadow: inset #0f0f0f 0 0 2px;
     color: white;
     font-size: 0.95em;
 }
-input[type="text"]: : selection {
-	color: black;
-	background: #999999;
+input[type="text"]::-webkit-input-placeholder {
+	color: white;
 }
-#search input[type="text"]: hover, #search input[type="text"]: focus {
-    box-shadow: inset #0f0f0f 0 0 6px;
+input[type="text"]:: selection {
+	color: black;
+	background: #FAFAFA;
 }
 #search button {
     cursor: pointer;
@@ -182,29 +209,22 @@ input[type="text"]: : selection {
     position: absolute;
     top: 4px;
     right: 4px;
-    background: #111111;
-    border: 1px solid rgba(60, 60, 80, 0.6);
+    background: #FFA628;
+    border: 1px solid #FFA628;
     width: 70px;
     height: 25px;
-    border-radius: 3px;
-    box-shadow: inset rgba(79, 140, 168, 1) 0 0 4px;
-    color: rgba(79, 140, 168, 0.98);
-    text-shadow: rgba(79, 140, 168, 0.98) 0 0 10px;
+    color: white;
     text-align: left;
     padding-left: 12px;
     padding-bottom: 4px;
 }
 #search button:hover, #search button:focus {
-    border: 1px solid rgba(60,60,80,0.4);
-    box-shadow: inset rgba(118, 210, 252, 0.6) 0 0 15px, #285266 0 0 3px;
-    color: #427399;
-    text-shadow: none;
     padding-left: 36px!important;
 }
 #select {
     position: absolute;
     left: -82px;
-    color: rgb(122, 174, 216);
+    color: white;
     appearance: none;
     -webkit-appearance: none;
     -webkit-border-radius: 2px;
@@ -218,35 +238,27 @@ input[type="text"]: : selection {
     -moz-user-select: none;
     -moz-transform: translate(-4px,-2px);
     background: rgba(22,22,22,0);
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #CC181E;
     font-size: inherit;
     margin: 0;
     overflow: hidden;
     padding-top: 7px;
     padding-bottom: 6px;
     text-overflow: ellipsis;
-    border-radius: 5px;
     display: inline-block;
 }
 #selectbg {
 	position: absolute;
-	-moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-box-shadow: inset #0F0F0F 0px 0px 2px;
-    -webkit-box-shadow: inset #0F0F0F 0px 0px 2px;
     -moz-padding-end: 10px;
     -webkit-padding-end: 10px;
     -moz-padding-start: 10px;
     -webkit-padding-start: 10px;
-    background: rgba(22, 22, 22, .7);
+    background: #CC181E;
     height: 18px;
     width: 55px;
     left: -82px;
     margin: 0;
-    box-shadow: inset #0F0F0F 0 0 2px;
-    border: 1px solid rgba(30, 30, 30, .6);
-    border-bottom: 1px solid rgba(48,48,48,.8);
-    border-radius: 5px;
+    border: 1px solid #CC181E;
     display: inline-block;
     padding-top: 7px;
     padding-bottom: 6px;
@@ -254,13 +266,13 @@ input[type="text"]: : selection {
 #menulink {
     width: auto;
     height: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     display: inline-block;
     font-family: Oswald;
     font-size: 30px;
     font-weight: 500;
     z-index: 5;
-    color: rgb(79, 140, 168);
+    color: white;
     text-decoration: none;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -268,48 +280,35 @@ input[type="text"]: : selection {
 #menulink:hover, #menulink:active {
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     margin-top: -10px;
-    text-shadow: #060606 0px 0px 5px, #5151b4 0px 1px, #335588 0px 2px;
 }
 #slide {
     height: 450px;
     width: 110px;
-    background: rgb(27, 27, 27);
+    background: #43609C;
+	border: 1px solid #43609C;
     position: absolute;
     -webkit-transition: all .6s ease;
     -moz-transition: all .6s ease;
     right: 7%;
     top: -1000px;
     font-family: sans-serif;
-    box-shadow: inset 0px 14px 10px #0F0F0F;
     text-align: center;
     font-size: 20px;
 }
-#slide:before { /* This is for the blue shadow behind the menu. Trust me, it's necessary */
-	box-shadow: 0px -10px 10px 0px rgba(79,140,168,1);
-	z-index: -2;
-	height: auto;
-    position: absolute;
-    content: '';
-    top: 0px; 
-	right: 0px; 
-	bottom: -10px;
-	left: 0px; 
-}
 #slide:after { /* This is for the triangular bottom of the menu */
-    width: 82px;
-    height: 82px;
-    background: rgb(27, 27, 27);
+    width: 76px;
+    height: 76px;
+    border: 1px solid #43609C;
+    background: #43609C;
     content: '';
-    bottom: -41px;
-    right: 14px;
+    bottom: -40px;
+    right: 16px;
     position: absolute;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     z-index: -1;
-    border-radius: 8px;
-    box-shadow: inset 0px 0px 10px #0F0F0F, 0px 0px 10px 0px rgba(79,140,168,1);
 }
 #nextbutton, #prevbutton {
     height: 100%;
@@ -318,6 +317,7 @@ input[type="text"]: : selection {
     position: absolute;
     top: 0px;
     -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
     border-radius: 10px;
     display: inline-block;
 }
@@ -335,23 +335,25 @@ input[type="text"]: : selection {
 }
 #swapCont {
 	position: relative;
-	top: 40px;
+	top: 50px;
+	height: 18px;
 	z-index: -2;
 }
 #swap {
-    height: 14px;
-    width: 14px;
-    box-shadow: 0px 0px 1px .14em rgba(79,140,168,1);
-    border-radius: 8px;
+    height: 12px;
+    width: 12px;
+    border: 2px solid #4583EE;
+    background: #4583EE;
     display: inline-block;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
-    margin: 0px 14px;
+    margin: 3px 14px;
 	-webkit-animation: animate-swaps .8s ease-in;
     -moz-animation: animate-swaps .8s ease-in;
 }
 #swap:hover {
-    -webkit-transform: scale(1.5)!important;
-    -moz-transform: scale(1.5)!important;
+    height: 18px !important;
+    width: 18px !important;
+    margin: 0px 11px !important;
     cursor: pointer;
 }

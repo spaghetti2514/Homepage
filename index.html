@@ -9,32 +9,32 @@
 	<script src="js/config.js"></script>
 	<script src="js/main.js"></script>
 	</head>
-<body onkeydown="keymenu(event)">
+  <body onkeydown="keymenu(event)">
     <div id="parent">
-        <div id="swapCont"></div>
+      <div id="swapCont"></div>
 		<div id="slide" onmouseover="lower()" onmouseout="raise()" onclick="k()" >
-			</br>
-			<nav id="menunav"></nav>
+      </br>
+      <nav id="menunav"></nav>
 		</div>
-        <div id="panel">
-            <div id="wrapper">
-            	<div id="sitescontainer">
-                	<div id="sitesjar"></div>
-                </div>
-                <center>
-                    <div id="search">
-                        <form id="searchform" name="searchform" method="" action="">
-                    		<div id="selectbg"></div>
-                    		<select id="select" onchange="s()"></select>
-                    		<input id="searchbox" type="text" autocomplete="off" name="q" placeholder="Search" onfocus="this.placeholder = ''; lockKeys()" onblur="this.placeholder = 'Search'; unlockKeys()" />
-                            <button type="submit" onmousedown='this.setAttribute("style","font-size: 24px; line-height: .75; padding-left: 28px!important;");' onmouseout='this.setAttribute("style","font-size: 18px; line-height: 1.1; padding-left: 12px;");' onclick='this.setAttribute("style","font-size: 18px; line-height: 1.1");'>➟</button>
-                        </form>
-                    </div>
-                </center>
+      <div id="panel">
+        <div id="wrapper">
+          <div id="sitescontainer">
+            <div id="sitesjar"></div>
+          </div>
+          <center>
+            <div id="search">
+              <form id="searchform" name="searchform" method="" action="">
+                <div id="selectbg"></div>
+                <select id="select" onchange="s()"></select>
+                <input id="searchbox" type="text" autocomplete="off" name="q" placeholder="Search" onfocus="this.placeholder = ''; lockKeys()" onblur="this.placeholder = 'Search'; unlockKeys()" />
+                <button type="submit" onmousedown='this.setAttribute("style","font-size: 24px; line-height: .75; padding-left: 28px!important;");' onmouseout='this.setAttribute("style","font-size: 18px; line-height: 1.1; padding-left: 12px;");' onclick='this.setAttribute("style","font-size: 18px; line-height: 1.1");'>➟</button>
+              </form>
             </div>
-        	<div id="prevbutton" onclick="prevPage()"></div>
-    		<div id="nextbutton" onclick="nextPage()"></div>
+          </center>
         </div>
+        <div id="prevbutton" onclick="prevPage()"></div>
+        <div id="nextbutton" onclick="nextPage()"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
